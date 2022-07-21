@@ -1,0 +1,410 @@
+/* variables */
+:root {
+    --black: #161616;
+}
+
+/* unviersal utilities */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------- header template---------
+---------------------------------- */
+.container {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* border: 2px solid green; */
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
+
+/* ------------card text and button---------
+--------------------------------------------*/
+.card-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 70px;
+}
+
+.text-title h1 {
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+.text-title p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.watch-btn button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ---------------card image---------------
+------------------------------------------- */
+.card-image {
+    width: 50%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+/* -------------main section----------
+--------------------------------------*/
+.main-container {
+    /* border: 2px solid rgb(78, 13, 13); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-container {
+    /* border: 2px solid green; */
+    width: 70%;
+    display: grid;
+    grid-template-columns: 312px auto;
+    gap: 20px;
+}
+
+/* ---------side-navbar----------
+--------------------------------- */
+.side-navbar {
+    width: 312px;
+    height: 312px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.option {
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.option a {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+.opt-three {
+    background-color: red;
+}
+
+.opt-three a {
+    color: white;
+}
+
+/*-------------- inner bolg section-------- 
+--------------------------------------------*/
+.blog-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.inner-blog {
+    width: 100%;
+    height: 400px;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.inner-blog>img {
+    width: 100%;
+}
+
+.btn-p-padding {
+    padding: 20px;
+}
+
+.transfer-btn {
+    border: none;
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border: 1px solid rgb(95, 93, 93);
+    border-radius: 3px;
+}
+
+.blog-font-icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------------upcoming html page styling--------------
+--------------------------------------------------------- */
+.inner-blog-upcoming {
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ----view all button----------*/
+
+.view-all-sec {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.view-all-btn {
+    border: none;
+    width: 130px;
+    height: 50px;
+    background-color: red;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+
+}
+
+/* ----------footer section-------------
+----------------------------------------*/
+.footer-main {
+    width: 100vw;
+    /* height: 70vh; */
+    background-color: black;
+    margin-top: 20px;
+    color: white;
+
+}
+
+.goal {
+    /* height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600px;
+    width: 100%;
+}
+
+.footer-terms {
+    box-sizing: content-box;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.social {
+    box-sizing: content-box;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+}
+
+/* responsiveness for tab view */
+
+@media only screen and (max-width:992px) and (min-width:577px) {
+    .card {
+        /* border: 2px solid green; */
+        width: 90%;
+        height: 70vh;
+        display: flex;
+        color: white;
+        background-color: black;
+        border-radius: 30px;
+    }
+
+    .card-text {
+        padding: 0 40px;
+        width: 30%;
+    }
+
+    .card-image {
+        width: 70%;
+    }
+
+    .text-title h1 {
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .text-title p {
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .blog-container {
+        /* border: 2px solid green; */
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .side-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 80px;
+        width: 100%;
+
+    }
+
+    .blog-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .inner-blog {
+        height: 420px;
+    }
+
+    .tab-block {
+        display: none;
+    }
+
+    /* .view-all-sec {
+        display: block;
+    } */
+
+    .footer-terms {
+        flex-wrap: wrap;
+    }
+}
+
+/* Responsive for mobile devices */
+@media only screen and (max-width:576px) {
+    .card {
+        /* border: 2px solid green; */
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .card-text {
+        height: 50%;
+        width: 100%;
+    }
+
+    .card-image {
+        height: 50%;
+        width: 100%;
+    }
+
+    .blog-container {
+        /* border: 2px solid green; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .side-navbar {
+        background-color: white;
+    }
+
+    .option {
+        border: 1px solid gray;
+
+    }
+
+    .blog-item {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 100px; */
+    }
+
+    .inner-blog {
+        height: 450px;
+    }
+
+    .footer-terms {
+        flex-direction: column;
+    }
+}
