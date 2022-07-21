@@ -74,6 +74,11 @@ body {
     margin-top: 40px;
 }
 
+button:hover {
+    background-color: #7858A6;
+    color: #F9F3EE;
+}
+
 /* ---------------card image---------------
 ------------------------------------------- */
 .card-image {
